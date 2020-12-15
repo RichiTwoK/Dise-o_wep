@@ -26,7 +26,8 @@ img {
     
 }
 h1{
-    font-size: 3.8rem;
+    font-size: 5rem;
+    text-align: center;
 }
 
 h2{
@@ -73,7 +74,7 @@ display: inline-block;
 
 /*Header*/
 .site-header.inicio{
-background-image: url(../img/header.jpg);
+background-image: url(../Img/luck.jpeg);
 background-position: center center;
 background-size: cover;
 height: 100vh;
@@ -94,7 +95,13 @@ min-height: 60rem;
     max-width: 60rem;
     line-height: 2;
 }
-
+.Titulo-inicior {
+    color: rgb(42, 128, 9);
+    padding-top: 3rem;
+    max-width: 200rem;
+    line-height: 18;
+    font-style: italic;
+}
 .barra{
     display: flex;
     justify-content: space-between;
