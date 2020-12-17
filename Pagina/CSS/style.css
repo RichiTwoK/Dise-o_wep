@@ -22,12 +22,14 @@ img {
 
 .contenedor{
     max-width: 120rem; /*1200px*/
-    margin: 0 auto
+    margin: 0 auto;
+    padding-top: 2rem;
     
 }
 .contenedor1{
     max-width: 142rem; /*1200px*/
-    margin: 0 auto
+    margin: 0 auto;
+    padding-top: 2rem;
     
 }
 .uno{
@@ -35,12 +37,9 @@ img {
    text-align: justify;
 }
 
-
-}
-
 h1{
-    font-size: 5rem;
-    text-align: center;
+    font-size: 8rem;
+    
 }
 
 h2{
@@ -62,7 +61,7 @@ h2{
 }
 
 .separacion{
-    flex-basis: calc(50% - 1rem);
+    flex-basis: calc(50% - 3rem);
    
 }
 
@@ -128,11 +127,11 @@ min-height: 60rem;
     max-width: 60rem;
     line-height: 2;
 }
-.Titulo-inicior {
+.Titulo-inicior h1{
     color: rgb(42, 128, 9);
     padding-top: 25rem;
     max-width: 500rem;
-    line-height: 18;
+    line-height: 5.5;
     font-style: italic;
     text-align: center;
 }
