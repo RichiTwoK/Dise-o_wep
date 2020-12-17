@@ -26,7 +26,7 @@ img {
     
 }
 .contenedor1{
-    max-width: 70rem; /*1200px*/
+    max-width: 142rem; /*1200px*/
     margin: 0 auto
     
 }
@@ -48,12 +48,22 @@ h2{
 }
 
 .proyecto{
-    margin-left: 2.5rem;
     color: rgb(3, 163, 16);
 }
 .parrafo1{
     text-align: justify;
     color: black; 
+    font-size:x-large;
+}
+
+.divimg{
+    display: flex;
+    justify-content: space-between;
+}
+
+.separacion{
+    flex-basis: calc(50% - 1rem);
+   
 }
 
 h3{
