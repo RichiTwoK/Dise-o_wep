@@ -25,6 +25,19 @@ img {
     margin: 0 auto
     
 }
+.contenedor1{
+    max-width: 70rem; /*1200px*/
+    margin: 0 auto
+    
+}
+.uno{
+   font-style: oblique; 
+   text-align: justify;
+}
+
+
+}
+
 h1{
     font-size: 5rem;
     text-align: center;
@@ -33,6 +46,16 @@ h1{
 h2{
     font-size: 3.4rem;
 }
+
+.proyecto{
+    margin-left: 2.5rem;
+    color: rgb(3, 163, 16);
+}
+.parrafo1{
+    text-align: justify;
+    color: black; 
+}
+
 h3{
     font-size: 3rem;
 }
@@ -97,10 +120,11 @@ min-height: 60rem;
 }
 .Titulo-inicior {
     color: rgb(42, 128, 9);
-    padding-top: 3rem;
-    max-width: 200rem;
+    padding-top: 25rem;
+    max-width: 500rem;
     line-height: 18;
     font-style: italic;
+    text-align: center;
 }
 .barra{
     display: flex;
