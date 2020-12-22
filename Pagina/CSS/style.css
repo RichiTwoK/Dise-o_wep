@@ -23,7 +23,7 @@ img {
 .contenedor{
     max-width: 120rem; /*1200px*/
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 3rem;
     
 }
 .contenedor1{
@@ -38,7 +38,7 @@ img {
 }
 
 h1{
-    font-size: 8rem;
+    font-size: 4.5rem;
     
 }
 
@@ -106,7 +106,7 @@ display: inline-block;
 
 /*Header*/
 .site-header.inicio{
-background-image: url(../Img/luck.jpeg);
+background-image: url(../Img/logosvg.svg);
 background-position: center center;
 background-size: cover;
 height: 100vh;
@@ -128,18 +128,18 @@ min-height: 60rem;
     line-height: 2;
 }
 .Titulo-inicior h1{
-    color: rgb(42, 128, 9);
-    padding-top: 25rem;
+    color: rgb(145, 0, 60);
+    padding-top: 52rem;
     max-width: 500rem;
     line-height: 5.5;
-    font-style: italic;
+    font-style: normal;
     text-align: center;
 }
 .barra{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
+    padding-left: 100rem;
 }
 
 /* navegacion**/
@@ -147,7 +147,10 @@ min-height: 60rem;
     color: white;
     text-decoration:none ;
     font-size: 1.8rem;  /* es igual a 18px*/
-    margin-right: 2rem;
+    margin-right: 1rem;
+}
+.enlace{
+  padding: 0;
 }
 .navegacion a:hover{
     color: #71B100;
