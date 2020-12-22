@@ -21,11 +21,12 @@ img {
 
 /*Header*/
 .site-header.inicio{
-    background-image: url(../Img/luck.jpeg);
+    background-image: url(../Img/logosvg.svg);
     background-position: center center;
     background-size: cover;
     height: 100vh;
     min-height: 60rem;
+        
 }
 .contenedor{
     max-width: 120rem; /*1200px*/
