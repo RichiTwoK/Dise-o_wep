@@ -14,12 +14,19 @@ img{
     margin:0 auto; /* El margen que tendra superio e inferior = 0 y el izq y Derecho = automatico*/
 }
     
+.contenedor1{
+    max-width:95%; /*El tamaño que ocupará el contenido en pantalla sin pasarse del rango*/
+    margin:0 auto; /* El margen que tendra superio e inferior = 0 y el izq y Derecho = automatico*/
+}
+
 h1{
     font-size:5rem;
 }
 
 h2{
-    font-size:4.6rem;
+    font-size:4.8rem;
+    margin-top:2rem;
+    margin-bottom:1rem;
 }
 
 h3{
@@ -27,7 +34,8 @@ h3{
 }
 
 h4{
-    font-size:3.8rem;
+    font-size:2rem;
+    font-weight: 400;
 }
 
 /*Utilidades*/
@@ -36,7 +44,11 @@ h4{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
+.seccion-proyecto{
+    /*Agrega un margen superior e inferior al contenido seleccionado*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 /*HEADER*/
 
 .site-header.inicio{
@@ -110,4 +122,81 @@ h4{
 }
 .imagen-nosotros{
     margin-top: 2rem ;/*margen de espacio de la imagen con el contenido anterior*/
+}
+
+
+/*NUESTRO PROYECTO*/
+
+.proyecto{
+    display: flex;
+    flex-direction:column;/* Se coloca en forma de columna el parafo y la imagen del nuetro proyecto*/
+    justify-content: space-between; /*Separa a los elementos de "Nuestro proyecto" */
+   
+}
+.proyecto h2{
+    background-color:#e48200;
+    font-weight: 700; /*Agrega fuente gruesa al titulo "Nuestro Proyecto*/
+    padding-left: 35%;/* Mueve el titulo a la derecha ya que se agrega un margen izquierdo*/
+   
+}
+.contenido-proyecto p{
+    font-weight:300; /* Agrega una fuente mas delgada al parrafo de "Nuestro proyecto */
+    font-size:2.5rem; /* Le asigna un tamaño de letra al parrafo*/
+    text-align: justify; /* Justifica el contenido del parrafo*/
+    margin-bottom: 2rem; /* Deja un margen de 2rem depues del parrafo de "Nuestro proyecto"*/
+}
+.imagen-proyecto{
+    display: flex; /*Separa a los elementos dentro de imagen proyecto(img y link[Echa un vistazo])*/
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0rem;
+    background-color:darkgreen;
+    
+}
+.imagen-proyecto img{
+    margin: 0 33rem; /*Margen de la imagen izq y derecho*/
+    width: 700px; /* Largo de la imagen */ 
+    height:300; /*Ancho de la Imagen*/
+}
+.link-proyecto a{
+    padding-left: 80rem;/* Movimiento a la derecha de "Echa un vistazo!"*/
+    font-size:5rem; /*Tamaño de fuente*/
+    font-weight: 400;/* Grosor de Echa un vistazo!*/
+    color:white; /* Color de  Echa un vistazo!*/
+    text-decoration: none;/*Para quitar el subrayado de "Echa un vistazo"*/
+}
+
+.link-proyecto nav a:hover{
+    color:#e48200; /*color a resaltar de "Echa un vistazo!"*/
+}
+
+/**Metas**/
+
+.espacio{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 7rem;
+
+}
+
+.espacio2{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+    background-color: #dedede;
+}
+.icono1{
+    flex-basis: calc(90% - 1rem); /*Dividir proporcionalmente el contenido*/
+    text-align:center center;
+}
+.color{
+    background-color: #595d64;
+    text-align:justify;
+}
+
+.metas{
+    padding-top:5.5rem;
+    padding-left: 4rem;
 }
