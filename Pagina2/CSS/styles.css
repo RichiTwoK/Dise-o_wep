@@ -1,57 +1,113 @@
-html {
-    font-size: 62.5%; /** Reset para rems 62.5% son 10 px de 16 px**/
-}
-body {
-    font-family:monospace;
-    font-size:1.6rem;
+/*** Modificado por: Ismael Guevara Montebello ***/
+
+body{
+    font-family:'Oswald', sans-serif; 
+   
 }
 
-/** header**/
+/*Globales*/
+img{
+    max-width: 100%;
+}
 .contenedor{
-    max-width: 120rem; /*1200px*/
-    margin: 0 auto;
+    max-width:95%; /*El tamaño que ocupará el contenido en pantalla sin pasarse del rango*/
+    margin:0 auto; /* El margen que tendra superio e inferior = 0 y el izq y Derecho = automatico*/
+}
     
+h1{
+    font-size:5rem;
 }
 
+h2{
+    font-size:4.6rem;
+}
 
+h3{
+    font-size:4.2rem;
+}
 
-/*Header*/
+h4{
+    font-size:3.8rem;
+}
+
+/*Utilidades*/
+.seccion{
+    /*Agrega un margen superior e inferior al contenido seleccionado*/
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*HEADER*/
 
 .site-header.inicio{
-    background-image: url(../Img/logosvg.svg);
+    background-image: url(../Img/logo3.png);
     background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    min-height: 60rem;
+    height: 100vh; /*Tamaño de vista que ocupará la imagen*/
+    min-height: 60rem;/*El tamaño minimo que siempre mostrará la imagen*/
+}
+.contenido-header{
+    height: 99%; /*Marcamos una distacia entre el primer(barra) y segundo(h1) elemento*/
+    display: flex;
+    /*Hacemos que el contenido se divida verticalmente*/
+    flex-direction: column;
+    /*Separa a los hijos en este caso a la barra y a h1 en una distancia deteminada*/
+    justify-content:space-between; 
+}
+
+/*Modifica solo al elemento señalado siendo h1*/
+.contenido-header h1{
+    padding-left:3%; /*Espacio del elemento */ 
+    margin-right: 30%;/*Margen derecho del fondo*/
+    margin-left: 30%;/*Margen izq del fondo*/
     
 }
-.contenido-header {
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-}
-.contenido-header h1 {
-    color: white;
-    padding-bottom: 8rem;
-}
+
 .barra{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    padding-top: 3rem;
- 
+    display:flex; /*Hace que los elementos de barra se vuelvan flexibles*/
+    justify-content:flex-end; /*Esta funcion permite junto display poner los elementos al final de
+    de la pantalla (Lado derecho)*/
+    padding-top: 1.5rem; /* Margen superior que se dejara sin mover todo el contenido*/ /*15px*/
 }
-/* navegacion**/
-.navegacion a {
-    color:rgba(255,255,255, .4);
-    text-decoration:none;
-    font-size: 2rem;
-    margin-right:1.5rem ;
+
+/*NAVEGACION*/
+.navegacion a{
+    color:white;
+    font-style: bold;
+    font-size: 1.25rem;
+    text-decoration: none; /*Quita el subrayado de los elemntos*/
+    margin-right: 2rem; /* Agrega un margen a la derecha de cada elemento de la barra*/
 }
-.navegacion a:hover {
-    color:#71B100;
+
+/*Permite que al pasar el raton sobre los elementos cambie de color*/ 
+.navegacion a:hover{
+    color: #71B100;
 }
-.navegacion a:last-of-type{
+
+/*Seudoselector (Quita el margen del ultimo elemento de la barra)*/
+.navegacion a:last-of-type{ 
     margin: 0;
+}
+/*NAVEGACION*/
+
+/*NOSOTROS*/
+.nosotros{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.icono{
+    flex-basis: calc(48% - 1rem); /*Dividir proporcionalmente el contenido*/
+    text-align:center center;
+}
+.contenido-nosotros.icono p{
+    text-transform: uppercase; /*Deja que la fuente siempre este en mayusculas*/
+    font-size: 3.5rem;
+    font-weight:300;
+    text-align: justify;
+    margin-top: 7.5rem; /*Margen superior del primer elemento siendo el texto*/
+    /*margin-bottom: 5rem*/;/*Margen inferior*/
+}
+.imagen-nosotros{
+    margin-top: 2rem ;/*margen de espacio de la imagen con el contenido anterior*/
 }
