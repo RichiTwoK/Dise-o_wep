@@ -4,13 +4,29 @@ html {
 body {
     font-family:monospace;
     font-size:1.6rem;
+    line-height:3;
 }
 
-/** header**/
+/** globales**/
 .contenedor{
     max-width: 120rem; /*1200px*/
     margin: 0 auto;
     
+}
+h1 {
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h4{
+    font-size: 2rem;
+}
+
+/** utilidades**/
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -34,6 +50,7 @@ body {
 .contenido-header h1 {
     color: white;
     padding-bottom: 8rem;
+    padding-left: 40%;
 }
 .barra{
     display: flex;
@@ -54,4 +71,25 @@ body {
 }
 .navegacion a:last-of-type{
     margin: 0;
+}
+/**primera divicion**/
+.divicion-pri {
+    background-color: rgb(15, 78, 15);
+    display:flex;
+    justify-content:space-between;
+}
+.icono {
+    flex-basis: calc(49%-1rem);
+    text-align: center;
+}
+.icono p {
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: initial;
+
+}
+.hori {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
