@@ -2,7 +2,7 @@ html {
     font-size: 62.5%; /** Reset para rems 62.5% son 10 px de 16 px**/
 }
 body {
-    font-family:monospace;
+    font-family: 'Indie Flower', cursive;
     font-size:1.6rem;
     line-height:3;
     background-color: rgb(54, 56, 56);
@@ -23,7 +23,7 @@ h2{
     font-size: 3.4rem;
 }
 h4{
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 /** utilidades**/
@@ -75,7 +75,7 @@ h4{
 .navegacion a:last-of-type{
     margin: 0;
 }
-/**primera divicion**/
+/**primera division**/
 .divicion-pri {
     /*background-color: rgba(250, 252, 247, 0.6);*/
     display:flex;
@@ -106,17 +106,20 @@ h4{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 7rem;
 }
 .img-cero img {
-    height: 40vh;
+    height: 50vh;
     min-height: 20rem;
 }
 
 /* segunda division*/
 
 .titulo h2 {
-    /*background-color: rgba(75, 111, 179, 0.3);*/
+    background-color: rgba(255, 255, 255, 0.7);
     text-align: center;
+    color: #71B100;
+    height:auto;
 }
 
 .texto-uno {
@@ -135,4 +138,43 @@ h4{
 .img-uno img {
     height: 50vh;
     min-height: 20rem;
+}
+/*division 3*/
+.division-dos {
+    display:flex;
+    justify-content:space-between;
+}
+
+.texto-dos {
+    flex-basis: calc(45% - 1rem);
+    text-align:left;
+    text-transform:capitalize;
+    margin-left: 2.5rem;
+}
+.texto-dos h2 {
+    color: #71B100;
+}
+/*division 4*/
+
+.texto-tres {
+    flex-basis: calc(50% - 1rem);
+    text-align:left;
+    text-transform:capitalize;
+    margin-left: 3rem;
+}
+.texto-tres h4 {
+    padding-top: 2.5rem;
+}
+.img-tres img {
+    height: 78vh;
+    min-height: 20rem;
+}
+/*fin*/
+.division-tres {
+    display:flex;
+    justify-content:space-between;
+}
+.texto-fn {
+    flex-basis: calc(50% - 1rem);
+    text-align:left;
 }
