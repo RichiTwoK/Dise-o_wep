@@ -1,54 +1,57 @@
-html{
-    font-size: 62.5%; /*Reset para REMS 62.5% es igual a 10px de 16px */
-    box-sizing: border-box;
+html {
+    font-size: 62.5%; /** Reset para rems 62.5% son 10 px de 16 px**/
 }
-*, *:before, *:after{
-    box-sizing: inherit;
+body {
+    font-family:monospace;
+    font-size:1.6rem;
 }
+
+/** header**/
 .contenedor{
     max-width: 120rem; /*1200px*/
     margin: 0 auto;
     
 }
 
+
+
 /*Header*/
 
 .site-header.inicio{
-    margin: 0;
     background-image: url(../Img/logosvg.svg);
     background-position: center center;
     background-size: cover;
-    height: 85vh;
-    min-height: 1rem;
+    height: 100vh;
+    min-height: 60rem;
     
 }
-
 .contenido-header {
-    color: rgb(207, 241, 56);
-    padding-top: 20rem;
-    max-width: 60rem;
-    line-height: 2;
-    
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
 }
-
-
+.contenido-header h1 {
+    color: white;
+    padding-bottom: 8rem;
+}
 .barra{
-    display: block;
-    justify-content: space-between;
+    display: flex;
+    justify-content:flex-end;
     align-items: center;
-    padding-top: 1rem;
-    float:right;
+    padding-top: 3rem;
+ 
 }
 /* navegacion**/
 .navegacion a {
-    color: rgb(240, 236, 236);
-    text-decoration:none ;
-    font-size: 1.8rem;  /* es igual a 18px*/
-    margin-right: 1rem;
+    color:rgba(255,255,255, .4);
+    text-decoration:none;
+    font-size: 2rem;
+    margin-right:1.5rem ;
 }
-.navegacion a:hover{
-    color: #71B100;
+.navegacion a:hover {
+    color:#71B100;
 }
 .navegacion a:last-of-type{
-    margin:0;
+    margin: 0;
 }
