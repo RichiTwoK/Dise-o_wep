@@ -1,8 +1,16 @@
 /*** Modificado por: Ismael Guevara Montebello ***/
 
+html{
+    box-sizing: border-box;
+    font-size: 62%;
+}
+
+*, *::before, *::after{
+    box-sizing:inherit;
+}
+
 body{
-    font-family:'Oswald', sans-serif; 
-   
+    font-family:'Oswald', sans-serif;   
 }
 
 /*Globales*/
@@ -27,6 +35,7 @@ h2{
     font-size:4.8rem;
     margin-top:2rem;
     margin-bottom:1rem;
+    padding: 1rem;
 }
 
 h3{
@@ -120,8 +129,12 @@ h4{
     margin-top: 7.5rem; /*Margen superior del primer elemento siendo el texto*/
     /*margin-bottom: 5rem*/;/*Margen inferior*/
 }
-.imagen-nosotros{
+.imagen-nosotros.icono img{
     margin-top: 2rem ;/*margen de espacio de la imagen con el contenido anterior*/
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 3rem;
+    background-size: 100% auto;
 }
 
 
@@ -136,7 +149,9 @@ h4{
 .proyecto h2{
     background-color:#e48200;
     font-weight: 700; /*Agrega fuente gruesa al titulo "Nuestro Proyecto*/
-    padding-left: 35%;/* Mueve el titulo a la derecha ya que se agrega un margen izquierdo*/
+    text-align: center;
+    padding: 2rem;
+    border-radius: 3rem;
    
 }
 .contenido-proyecto p{
@@ -151,6 +166,7 @@ h4{
     justify-content: space-between;
     margin: 0 0rem;
     background-color:darkgreen;
+    border-radius: 3rem;
     
 }
 .imagen-proyecto img{
@@ -164,6 +180,7 @@ h4{
     font-weight: 400;/* Grosor de Echa un vistazo!*/
     color:white; /* Color de  Echa un vistazo!*/
     text-decoration: none;/*Para quitar el subrayado de "Echa un vistazo"*/
+    text-align: end;
 }
 
 .link-proyecto nav a:hover{
@@ -177,7 +194,10 @@ h4{
     flex-direction: column;
     justify-content: space-between;
     margin-right: 7rem;
-
+}
+.espacio:last-of-type{
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .espacio2{
@@ -186,7 +206,9 @@ h4{
     margin-top: 3rem;
     margin-bottom: 8rem;
     background-color: #dedede;
+    border-radius: 3rem;
 }
+
 .icono1{
     flex-basis: calc(90% - 1rem); /*Dividir proporcionalmente el contenido*/
     text-align:center center;
@@ -194,9 +216,94 @@ h4{
 .color{
     background-color: #595d64;
     text-align:justify;
+    border-radius: 1rem;
 }
 
 .metas{
     padding-top:5.5rem;
     padding-left: 4rem;
 }
+
+/* METAS A FUTURO */
+
+.futuras h2{
+    padding: 2rem;
+    background-color: #e48200;
+    border-radius:2rem;
+    text-align: center;
+}
+.divi{
+    display: flex;
+    justify-content:space-between;
+    padding:2rem;
+    flex-basis: calc(50% - 1rem);
+}
+.divi img{
+    width: 750px;
+    height: 400px;
+    border-radius: 5rem;
+}
+.texto{
+    padding: 6rem;
+}
+.texto h4{
+    font-size: 2.3rem;
+    text-align: justify;
+}
+
+
+/* Final */
+.final{
+    display: flex;
+    justify-content:space-between;
+    flex-basis: calc(10% - 1rem);
+    background-color:#474b4e;
+    border-top-right-radius: 0.7rem;
+    border-top-left-radius: 0.7rem;
+    padding: 1rem;
+}
+.navegacion1 a{
+    color:white;
+    font-style: bold;
+    font-size: 1.5rem;
+    text-decoration: none; /*Quita el subrayado de los elemntos*/
+    margin: 2rem; /* Agrega un margen a la derecha de cada elemento de la barra*/
+}
+.navegacion1 a:hover{
+    color: #e48200;
+}
+
+.final p{
+    font-size: 1.5rem;
+    color: white;
+}
+    
+/* Diseños */
+
+.encabezado{
+    background-image:url(../Img/logo4.png);
+    background-position: center center;
+    height: 30vh; /*Tamaño de vista que ocupará la imagen*/
+    min-height: 0rem;/*El tamaño minimo que siempre mostrará la imagen*/
+    margin:0;
+}
+
+.alineacion{
+    margin:0;
+    font-weight:400 ;
+    padding: 2rem;
+    text-align:end;
+}
+
+.diseños{
+    display: flex;
+    justify-content: space-between;
+    margin:2rem;
+    flex-wrap: wrap;
+}
+
+.margen{
+    flex: 0 0 calc(33.3% - 1rem);
+    
+}
+
