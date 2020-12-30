@@ -35,8 +35,14 @@ h4{
 .seccion {
     margin-top: 10rem;
     margin-bottom: 10rem;
-    border: 7px double #0f0f0f;
+    border: 1px double #030303;
     padding: 2rem;
+    border-style:solid;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 5rem;
+    background: linear-gradient(-90deg, rgb(33, 34, 34), #e3e6e3de);
+
+  
     /*border-style:dotted;*/
 }
 /** botones**/
@@ -46,7 +52,9 @@ h4{
 /*Header*/
 
 .site-header.inicio{
-    background-image: url(../Img/logosvg.svg);
+    background: linear-gradient(to right, rgba(172, 168, 168, .1), rgba(28, 29, 28, .2)), url(../Img/logosvg.svg);
+    /*background: linear-gradient(left, rgba(255,255,255,.5), rgba(255,255,255,.5)), url(../Img/logosvg.svg);*/
+    /*background-image: url(../Img/logosvg.svg);*/
     background-position: center center;
     background-size: cover;
     height: 100vh;
@@ -119,6 +127,7 @@ h4{
 .img-cero img {
     height: 50vh;
     min-height: 20rem;
+    border-radius: 5rem;
 }
 
 /* segunda division*/
@@ -129,6 +138,7 @@ h4{
     color: #71B100;
     height:auto;
     text-transform: uppercase;
+    border-radius: 1rem;
 
 }
 
@@ -182,13 +192,57 @@ h4{
 .img-tres img {
     height: 78vh;
     min-height: 20rem;
+    border-radius: 5rem;
 }
 /*fin*/
+.site-footer {
+    background: linear-gradient(250deg, rgb(22, 22, 22), #888888a2);
+}
 .division-tres {
+    margin: 0;
     display:flex;
     justify-content:space-between;
+    align-items: center;
 }
 .texto-fn {
     flex-basis: calc(50% - 1rem);
-    text-align:left;
+    text-align:center;
+}
+/*internas*/
+.site-headerdos{
+    background-image: url(../Img/fondo.png);
+    background-position: center center;
+    background-size: cover;
+    height: 10vh;
+    min-height: 5rem; 
+}
+.contenido-header-dos {
+    display: flex;
+    flex-direction: column;
+}
+.contenido-header-dos h1 {
+    color: rgb(19, 17, 17);
+    padding-top: 1rem;
+    padding-left: 40%;
+}
+.barra-dos {
+    display:flex;
+    justify-content:space-between;
+}
+.regreso img {
+    padding: 1rem;
+    height: 5rem;
+    min-height: 5rem;
+}
+.seleccion-sec {
+    padding-right: 2rem;
+}
+.seccion-uno {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: grey;
+}
+.seccion-uno h1 {
+    text-align: center;
 }
