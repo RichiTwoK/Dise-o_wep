@@ -5,14 +5,19 @@ body {
     font-family: 'Indie Flower', cursive;
     font-size:1.6rem;
     line-height:3;
-    background-color: rgb(54, 56, 56);
-    color: white;
+    background: linear-gradient(250deg, rgb(97, 95, 95), #959593a2);
+    background: linear-gradient(-98deg, rgb(75, 73, 73), #adada9a2);
+    color: rgb(12, 12, 12);
 }
 
 /** globales**/
+.img {
+    width: 100%;
+}
 .contenedor{
     max-width: 120rem; /*1200px*/
     margin: 0 auto;
+
     
 }
 h1 {
@@ -20,17 +25,21 @@ h1 {
     font-family: 'Indie Flower', cursive;
 }
 h2{
-    font-size: 3.4rem;
+    font-size: 3rem;
 }
 h4{
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 /** utilidades**/
 .seccion {
     margin-top: 10rem;
     margin-bottom: 10rem;
+    border: 7px double #0f0f0f;
+    padding: 2rem;
+    /*border-style:dotted;*/
 }
+/** botones**/
 
 
 
@@ -94,8 +103,7 @@ h4{
 
 }
 .icono a {
-    font-size: 1.5rem;
-    color: rgb(236, 230, 230);
+    color: rgb(12, 12, 12);
 }
 .hori a {
     display: flex;
@@ -116,23 +124,27 @@ h4{
 /* segunda division*/
 
 .titulo h2 {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #f5df4ded;
     text-align: center;
     color: #71B100;
     height:auto;
+    text-transform: uppercase;
+
 }
 
 .texto-uno {
     flex-basis: calc(50.4% - 1rem);
     text-align: center;
+
 }
 .texto-uno p {
     font-weight: 700;
     font-size: 1.6rem;
     text-transform: initial;
-    line-height:2;
+    line-height:3;
     padding-top: 4rem;
     font-family: 'Indie Flower', cursive;
+
 
 }
 .img-uno img {
@@ -150,6 +162,8 @@ h4{
     text-align:left;
     text-transform:capitalize;
     margin-left: 2.5rem;
+    line-height: 1.5;
+
 }
 .texto-dos h2 {
     color: #71B100;
