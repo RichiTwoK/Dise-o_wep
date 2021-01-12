@@ -48,7 +48,7 @@ p {
     font-size: 2.6rem;
 }
 li {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
 }
 a {
     font-size: 1.6rem;
@@ -221,8 +221,8 @@ img {
     .proyecto__contenido {
         padding-top: 6rem;
         text-align:center;
-        font-weight: 300;
-        font-size:2rem;
+        font-weight: 500;
+        font-size:2.6rem;
     }
 
     .proyecto__grid a {
@@ -273,4 +273,53 @@ img {
     border-radius: 0.5rem;
     text-align: center;
 }
+
+/* Metas Futuras */
+.futuro__flex {
+    margin-bottom: 2rem;
+}
+.futuro__titulo {
+    background-color: var(--colorD);
+    text-align: center;
+}
+.futuro__imagen {
+    max-width: 35%;
+}
+
+@media (min-width: 920px) {
+    .futuro__flex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .futuro__contenido {
+        padding-top: 7rem;
+        text-transform:capitalize;
+        line-height:7rem;
+        font-weight: 500;
+        
+    }
+}
+
+/* Footer */
+
+
+.footer__flex {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 0rem;
+    margin-bottom:0;
+   
+}
+.footer__h {
+    display: block;
+}
+.footer__flex p {
+    font-size: 1.6rem;
+    color: white;
+}
+.color {
+    background-color:var(--colorD);
+}
+
 
