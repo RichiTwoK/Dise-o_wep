@@ -191,6 +191,7 @@ img {
     text-align: center;
     padding: 1rem;
     background-color: var(--colorB);
+    margin: 0;
 }
 .proyecto__contenido {
     padding-top: 1rem;
@@ -238,6 +239,7 @@ img {
     padding:1rem;
     background-color: var(--colorB);
     text-align: center;
+    margin-bottom: 9rem;
 }
 
 .borde {
@@ -260,5 +262,15 @@ img {
     margin:0 1rem 0 4rem;
 }
 
+.grid__em {
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.fondo__me {
+    /**background-color: var(--colorD);*/
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
 
