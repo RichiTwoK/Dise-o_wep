@@ -256,16 +256,17 @@ img {
         padding: 3rem;
       
     }
+    .grid__em {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
 .metas__iconos {
     margin:0 1rem 0 4rem;
 }
 
-.grid__em {
-    display: flex;
-    justify-content: space-evenly;
-}
+
 
 .fondo__me {
     /**background-color: var(--colorD);*/
@@ -283,8 +284,10 @@ img {
     text-align: center;
 }
 .futuro__imagen {
-    max-width: 35%;
+    width: 70%;
+    padding-left: 12rem;
 }
+
 
 @media (min-width: 920px) {
     .futuro__flex {
@@ -295,8 +298,10 @@ img {
         padding-top: 7rem;
         text-transform:capitalize;
         line-height:7rem;
-        font-weight: 500;
-        
+        font-weight: 500;   
+    }
+    .futuro__imagen {
+        max-width: 35%;
     }
 }
 
