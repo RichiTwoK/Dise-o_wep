@@ -318,6 +318,7 @@ img {
 }
 .footer__h {
     display: block;
+    padding-left: 1rem;
 }
 .footer__flex p {
     font-size: 1.6rem;
@@ -327,4 +328,60 @@ img {
     background-color:var(--colorD);
 }
 
+/*Pag_Diseños*/
+.fondo__sn {
+    background-image: url(../Img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 17vh;
+    background-position: center center;
+}
 
+@media (min-width: 920px) {
+    .fondo__sn {
+        height: 12vh;
+    }
+}
+
+/*imagen_png y enlaces*/
+
+.fondo__separacion img {
+    max-width: 35%;
+    padding-top: 1rem; 
+    
+}
+.fondo__separacion {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.fondo__icono {
+    margin: auto auto 1rem auto; 
+} 
+
+@media (min-width: 920px) {
+    .fondo__separacion img {
+        max-width: 10%;   
+    }
+    .fondo__separacion {
+        flex-flow: row wrap;
+        justify-content:space-between;
+    }
+    .fondo__icono {
+        margin: auto 0 auto 0; 
+    } 
+}
+/*Equipo*/
+
+.fondo__flex {
+    display: flex;
+    justify-content:space-between;
+}
+.fondo_hijo {
+    flex-basis: calc(20% - 1rem);
+    text-align: center;
+    flex-flow: row;
+}
+.fondo__img {
+    width: 10%;
+}
