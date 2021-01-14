@@ -306,17 +306,22 @@ img {
 }
 
 /* Footer */
-.footer__flex {
-    display: grid;
-    grid-template-rows: auto;
+.contenedor__footer {
+    width:min(50%, 120rem);
+    margin: 0 auto;
 }
+
 .footer__flex p {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-left: 3rem;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
+    .contenedor__footer {
+        width:min(75%, 120rem);
+    }
     .footer__flex {
         display: flex;
         justify-content:space-between;
@@ -333,6 +338,9 @@ img {
 
 
 @media (min-width: 920px) {
+    .contenedor__footer {
+        width:min(95%, 120rem);
+    }
     .footer__flex {
         display: flex;
         justify-content:space-between;
