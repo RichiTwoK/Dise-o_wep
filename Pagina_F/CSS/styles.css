@@ -78,6 +78,43 @@ img {
     border-style: solid;
     border-color: var(--colorC);
 }
+/*Social*/
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+    z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+    margin: 0;
+}
+
+.social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social ul li a {
+	display: inline-block;
+	color:#fff;
+	background: #000;
+	padding: .5rem .5rem;
+	text-decoration: none;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+
+.social ul li .icon-facebook {background:#2559c8;} /* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .icon-instagram {background: #E1306C;}
+.social ul li .icon-twitter {background: #30b0ec;}
+.social ul li .icon-tiktok {background: #000000;}
+.social ul li .icon-mail {background: #666666;}
+
+.social ul li a:hover {
+	background: rgba(0, 0, 0, 0.623); /* Cambiamos el fondo cuando el usuario pase el mouse */
+	padding: 1rem 1rem; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+
 
 /*Header*/
 .fondo {
