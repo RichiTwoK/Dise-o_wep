@@ -467,5 +467,43 @@ img {
     }
 }
 
+/* Barra de busqueda */
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 ;
+}
+.barra-busqueda {
+    width:70%;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: rgba( 255 , 255 , 255 , 0.5);
+    padding:0 2rem;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    font-size: 2rem;
+}
 
+/* Categorias (GALERIA) */
+
+.categorias{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categorias a {
+    font-family: var(--fuente);
+    font-size: 2rem;
+    color:var(--colorF);
+    margin: 1rem 3rem;
+}
+.categorias a.activo {
+    color: white;
+    background-color: var(--colorD);
+    padding:0 1rem;
+    border-radius: 0.5rem;
+}
 
